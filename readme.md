@@ -18,7 +18,7 @@ Check out the live version here: [Tea House Landing Page](https://awfulasiful.gi
 - **DaisyUI**
 
 ## 📸 Screenshot
-![Tea House Landing Page](./images/ss.png)
+![Tea House Landing Page](images/ss.png)
 
 > _Screenshot of the Tea House landing page (above)._
 
