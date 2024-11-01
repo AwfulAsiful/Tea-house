@@ -377,11 +377,17 @@
             <form>
                 <h6 class="mb-[1.25rem] text-[var(--dark-1)] text-[1.25rem] font-semibold">Subscribe to our newsletter
                 </h6>
-                <fieldset class="form-control w-80">
-                    <div class="join">
-                        <input type="text" placeholder="Email address" class="input join-item" />
-                        <button class="btn btn-primary join-item">Subscribe</button>
-                    </div>
+                <fieldset class="form-control w-full flex flex-row gap-x-[2rem]">
+                    <input type="text" placeholder="Email address" class="bg-transparent border-b-2 border-black outline-none py-4 placeholder-black" >
+                    <button class="btn-color rounded-full p-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path d="M6.91406 3.92432L12.1315 9.14171L6.91406 14.3591" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                    </button>
+                    <!-- <div class="join">
+                        <input type="text" placeholder="Email address" class="input input-ghost" />
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div> -->
                 </fieldset>
             </form>
            
