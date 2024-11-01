@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --dark-1: #1C1C1C;
+            --dark-2: #494949;
+            --dark-3: #777777;
+        }
+
+        * {
+            font-family: "Manrope", sans-serif;
+        }
+
+
+        .outline-btn-txt {
+
+            background: linear-gradient(270deg, #F00 0%, #FF8938 100%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        .btn-color {
+            background: linear-gradient(270deg, #F00 0%, #FF8938 100%);
+            color: white;
+        }
+
+        .card-shadow {
+            box-shadow: 0px 7px 50px 0px rgba(0, 0, 0, 0.06);
+
+        }
+
+        .card-bg {
+            background: linear-gradient(180deg, #F4F4F4 0%, rgba(244, 244, 244, 0.00) 100%);
+            border-radius: 0.6rem;
+        }
+
+        .fresh-grad-1 {
+            border-radius: 0.6rem;
+            opacity: 0.1;
+            background: var(--Linear, linear-gradient(270deg, #F00 0%, #FF8938 100%));
+        }
+
+        .fresh-grad-2 {
+            border-radius: 0.6rem;
+            background: linear-gradient(90deg, #D9D9D9 0%, rgba(255, 255, 255, 0.00) 100%);
+        }
+
+        .fresh-img-bg-1 {
+            border-radius: 0.6rem;
+            background-color: rgba(87, 118, 57, 0.1);
+        }
+
+        .fresh-img-bg-2 {
+            border-radius: 0.6rem;
+            background: rgba(230, 166, 35, 0.10);
+        }
+
+        .footer-bg {
+            background: linear-gradient(270deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 137, 56, 0.10) 100%);
+            ;
+        }
+    </style>
+</head>
+
+<body class="max-w-[100rem] pt-[3rem] mx-auto">
+    <header class="px-[5rem]">
+        <div class="banner flex flex-row items-center">
+            <div class="banner-txt w-1/2">
+                <h2 class="text-[var(--dark-1)] text-[5rem] leading-[6rem] font-extrabold">It's good
+                    <br>tea time at The Tea House
+                </h2>
+                <p class="text-[var(--dark-3)] my-[2rem]">Tea and Botanical Solutions Supplier Give Optimum <br>
+                    Satisfaction To Your Taste Buds.</p>
+                <button class="btn btn-color">Explore more <span><img src="images/arrow.png" alt=""></span></button>
+            </div>
+            <div class="banner-img relative w-1/2">
+                <img src="images/banner.png" alt="">
+                <div
+                    class="rating-card rating flex flex-row items-center gap-x-[0.75rem] card-shadow rounded-[0.6rem] max-w-[15rem] absolute bottom-0 left-[3rem] bg-white p-4">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFF082]" />
+                    <div class="rating-txt">
+                        <h2 class="font-extrabold text-[2rem] text-[var(--dark-1)]">5.00</h2>
+                        <p class="font-semibold text-[var(--dark-2)]">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container px-[5rem]">
+        <!-- featured section starts -->
+        <section class="featured-section my-[5rem]">
+            <div class="fs-txt text-center">
+                <h2 class="text-[var(--dark-1)] text-[2.8rem] font-extrabold">Our Featured Products</h2>
+                <p class="text-[var(--dark-3)] font-medium mt-[1.25rem] mb-[3rem]">There are many variations of passages
+                    of
+                    Lorem Ipsum available, but the majority have suffered alteration in some form, <br>by injected
+                    humour,
+                    or randomised words which don't look even slightly believable. </p>
+            </div>
+            <div class="fs-cards flex flex-row gap-x-[1.5rem]">
+                <!-- card-1 starts -->
+                <div class="card card-bg flex flex-col items-center p-[2rem]">
+                    <div class="card-img">
+                        <img src="images/tea-1.png" alt="">
+                    </div>
+                    <div class="card-txt text-center">
+                        <h2 class="font-extrabold text-[var(--dark-1)] text-[1.5rem]">Milk Tea</h2>
+                        <p class="text-[var(--dark-3)] font-semibold">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- card-1 ends -->
+
+                <!-- card-2 starts -->
+                <div class="card card-bg flex flex-col items-center p-[2rem]">
+                    <div class="card-img">
+                        <img src="images/tea-2.png" alt="">
+                    </div>
+                    <div class="card-txt text-center">
+                        <h2 class="font-extrabold text-[var(--dark-1)] text-[1.5rem]">Black Tea</h2>
+                        <p class="text-[var(--dark-3)] font-semibold">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- card-2 ends -->
+
+                <!-- card-3 starts -->
+                <div class="card card-bg flex flex-col items-center p-[2rem]">
+                    <div class="card-img">
+                        <img src="images/tea-3.png" alt="">
+                    </div>
+                    <div class="card-txt text-center">
+                        <h2 class="font-extrabold text-[var(--dark-1)] text-[1.5rem]">Lemon Tea</h2>
+                        <p class="text-[var(--dark-3)] font-semibold">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- card-3 ends -->
+
+                <!-- card-4 starts -->
+                <div class="card card-bg flex flex-col items-center p-[2rem]">
+                    <div class="card-img">
+                        <img src="images/tea-4.png" alt="">
+                    </div>
+                    <div class="card-txt text-center">
+                        <h2 class="font-extrabold text-[var(--dark-1)] text-[1.5rem]">Green Tea</h2>
+                        <p class="text-[var(--dark-3)] font-semibold">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+                <!-- card-4 ends -->
+
+            </div>
+        </section>
+        <!-- featured section ends -->
+
+
+        <!-- fresh section starts -->
+        <section class="fresh-section flex flex-row gap-x-[3rem]">
+
+
+            <div class="fresh-cards grid grid-rows-6 grid-cols-2 gap-x-[2rem] gap-y-[1.5rem] w-[50%]">
+                <div class="card-1 fresh-grad-1 row-span-2">
+
+                </div>
+                <div class="card-2 fresh-img-bg-2 row-span-4 py-[2rem] place-items-center">
+                    <img src="images/fresh-1.png" alt="">
+                </div>
+                <div class="card-3 fresh-img-bg-1 row-span-4 py-[2rem] place-items-center">
+                    <img src="images/fresh-2.png" alt="">
+                </div>
+                <div class="card-4 fresh-grad-2 row-span-2">
+
+                </div>
+            </div>
+
+            <div class="fs-txt w-[50%]">
+                <h2 class="text-[var(--dark-1)] text-[3rem] font-extrabold">Great Tea, Freshly Presented</h2>
+                <p class="text-[var(--dark-3)] my-[1.25rem] font-medium">The meaning of gong cha is chanese is to
+                    provide
+                    the best tea to emperor from all possessions . It represents the highest quality and self
+                    expectation.
+                    Establishing in 2006, Gong cha had been deeply appreciated by its custoers because of good words of
+                    mouth and unique customized service orginated from Taiwan.</p>
+
+                <h2 class="text-[var(--dark-1)] text-[1.25rem] font-extrabold">Unique Taste</h2>
+                <p class="text-[var(--dark-3)] my-[1.25rem] font-medium">A Unique and different style from other teapots
+                    gives a luxurious and minimalist impression.</p>
+                <h2 class="text-[var(--dark-1)] text-[1.25rem] font-extrabold">Premium Quality</h2>
+                <p class="text-[var(--dark-3)] my-[1.25rem] font-medium">Premium Quality that makes tea more elegant and
+                    more durable when you use it..</p>
+            </div>
+
+        </section>
+        <!-- fresh section ends -->
+
+
+        <!-- meet client section starts -->
+        <div class="meet-client hero btn-color my-[8rem] px-[4rem] py-[5rem]">
+            <div class="hero-content flex-col lg:flex-row gap-x-[5rem]">
+                <div class="meet-txt w-1/2">
+                    <h1 class="text-[2.8rem] font-bold">Meet Our Super <br> Clients</h1>
+                    <p class="py-6">
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised words which don't look even
+                        slightly
+                        believable.
+                    </p>
+                    <button class="bg-white btn border-0"><span class="outline-btn-txt">Show all</span></button>
+                </div>
+
+                <div class="meet-cards relative w-1/2">
+                    <!-- card-1 -->
+                    <div class="card bg-white px-[3rem] py-[2rem] relative w-96 opacity-20 mb-14">
+
+                        <div class="card-img absolute -top-4 -left-4">
+                            <img src="images/client.png" alt="">
+                        </div>
+                        <div class="card-txt">
+                            <p class="text-[var(--dark-3)]">We are providing the best and suitable home insurance
+                                services
+                                for the people who are interested to treatment</p>
+                            <p class="text-[var(--dark-1)] font-bold mt-[1.25rem]">Ilham Yuda</p>
+                            <p class="text-[var(--dark-2)] font-medium">Busineesman</p>
+                        </div>
+                    </div>
+                    <!-- card-1 -->
+
+                    <!-- card-2 -->
+                    <div class="card bg-white px-[3rem] py-[2rem] absolute w-96  z-20 top-[116px] -left-[3rem]">
+
+                        <div class="card-img absolute -top-4 -left-4">
+                            <img src="images/client.png" alt="">
+                        </div>
+                        <div class="card-txt">
+                            <p class="text-[var(--dark-3)]">We are providing the best and suitable home insurance
+                                services
+                                for the people who are interested to treatment</p>
+                            <p class="text-[var(--dark-1)] font-bold mt-[1.25rem]">Ilham Yuda</p>
+                            <p class="text-[var(--dark-2)] font-medium">Busineesman</p>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+
+                    <!-- card-3 -->
+                    <div class="card bg-white px-[3rem] py-[2rem] w-96 relative opacity-20">
+
+                        <div class="card-img absolute -top-4 -left-4">
+                            <img src="images/client.png" alt="">
+                        </div>
+                        <div class="card-txt">
+                            <p class="text-[var(--dark-3)]">We are providing the best and suitable home insurance
+                                services
+                                for the people who are interested to treatment</p>
+                            <p class="text-[var(--dark-1)] font-bold mt-[1.25rem]">Ilham Yuda</p>
+                            <p class="text-[var(--dark-2)] font-medium">Busineesman</p>
+                        </div>
+                    </div>
+                    <!-- card-3 -->
+                </div>
+            </div>
+        </div>
+        <!-- meet client section ends -->
+
+
+        <!-- news and events section -->
+        <section class="news-section">
+            <div class="news-txt text-center mb-[3rem]">
+                <h2 class="text-[2.8rem] font-extrabold text-[var(--dark-1)]">News & Events</h2>
+                <p class="text-[var(--dark-2)]">There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form, by injected humour, or randomised words which don't
+                    look
+                    even slightly believable. </p>
+            </div>
+
+            <div class="news-cards flex flex-row gap-x-[1.5rem]">
+                <!-- card-1 -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="images/news-1.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <p>Feb 05, 2027</p>
+                        <h2 class="card-title text-[var(--dark-1)] text-[1.25rem] font-extrabold">Collecting 8 points
+                            for
+                            discount</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <p class="text-[var(--dark-1)] font-bold">Learn More</p>
+                    </div>
+                </div>
+                <!-- card-1 -->
+
+                <!-- card-2 -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="images/news-2.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <p>Feb 05, 2027</p>
+                        <h2 class="card-title text-[var(--dark-1)] text-[1.25rem] font-extrabold">Collecting 8 points
+                            for
+                            discount</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <p class="text-[var(--dark-1)] font-bold">Learn More</p>
+                    </div>
+                </div>
+                <!-- card-2 -->
+
+                <!-- card-3 -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img src="images/news-3.png" alt="">
+                    </figure>
+                    <div class="card-body">
+                        <p>Feb 05, 2027</p>
+                        <h2 class="card-title text-[var(--dark-1)] text-[1.25rem] font-extrabold">Collecting 8 points
+                            for
+                            discount</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <p class="text-[var(--dark-1)] font-bold">Learn More</p>
+                    </div>
+                </div>
+                <!-- card-3 -->
+            </div>
+        </section>
+        <!-- news and events section ends -->
+    </div>
+
+
+    <footer class="text-center py-[3rem] px-[10rem] mt-[8rem] footer-bg">
+        <div class="logo-container flex flex-row justify-between">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+
+            </div>
+            <div class="get-started flex flex-row items-center gap-x-4">
+                <p>Ready to get strated?</p>
+                <button class="btn btn-color">Get Started</button>
+            </div>
+        </div>
+
+        <div class="footer pt-[4rem]">
+            <nav>
+                <h6 class="mb-[1.25rem] text-[var(--dark-1)] text-[1.25rem] font-semibold">Quick Links</h6>
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Insurance</a>
+                <a class="link link-hover">Privacy Policy</a>
+            </nav>
+            <nav>
+                <h6 class="mb-[1.25rem] text-[var(--dark-1)] text-[1.25rem] font-semibold">Our Services</h6>
+                <a class="link link-hover">Life Insurance </a>
+                <a class="link link-hover">Car Insurance </a>
+                <a class="link link-hover">Health Insurance    </a>
+                <a class="link link-hover">Home Insurance</a>
+            </nav>
+            <nav>
+                <h6 class="mb-[1.25rem] text-[var(--dark-1)] text-[1.25rem] font-semibold">Help</h6>
+                <a class="link link-hover">FAQs</a>
+                <a class="link link-hover">Contact Us</a>
+
+            </nav>
+            <form>
+                <h6 class="mb-[1.25rem] text-[var(--dark-1)] text-[1.25rem] font-semibold">Subscribe to our newsletter
+                </h6>
+                <fieldset class="form-control w-80">
+                    <div class="join">
+                        <input type="text" placeholder="Email address" class="input join-item" />
+                        <button class="btn btn-primary join-item">Subscribe</button>
+                    </div>
+                </fieldset>
+            </form>
+           
+        </div>
+        <p class="text-[var(--dark-2)] font-medium text-center mt-[4rem]">© 2027 UIDesign.to - All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
