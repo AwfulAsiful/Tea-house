@@ -7,7 +7,6 @@ Check out the live version here: [Tea House Landing Page](https://awfulasiful.gi
 
 
 ## ✨ Features
-- Responsive design
 - Elegant styling with a warm theme
 - User-friendly layout highlighting key aspects of tea culture
 
